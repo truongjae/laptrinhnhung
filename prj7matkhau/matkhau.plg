@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\laptrinhnhung\prj7matkhau\matkhau.uvproj
+Project File Date:  04/01/2022
+
+<h2>Output:</h2>
+compiling matkhau.c...
+MATKHAU.C(36): warning C214: 'Argument': conversion: pointer to non-pointer
+matkhau.c - 0 Error(s), 1 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(37): warning C214: 'Argument': conversion: pointer to non-pointer
+matkhau.c - 0 Error(s), 1 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(36): warning C214: 'Argument': conversion: pointer to non-pointer
+MATKHAU.C(73): warning C276: constant in condition expression
+MATKHAU.C(90): warning C276: constant in condition expression
+matkhau.c - 0 Error(s), 3 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(36): warning C214: 'Argument': conversion: pointer to non-pointer
+MATKHAU.C(73): warning C276: constant in condition expression
+MATKHAU.C(90): warning C276: constant in condition expression
+matkhau.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=29.0 xdata=0 code=1146
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 0 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(73): warning C276: constant in condition expression
+MATKHAU.C(90): warning C276: constant in condition expression
+matkhau.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=29.0 xdata=0 code=1144
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 0 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(73): warning C276: constant in condition expression
+MATKHAU.C(90): warning C276: constant in condition expression
+matkhau.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=29.0 xdata=0 code=1144
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 0 Warning(s).
+compiling matkhau.c...
+MATKHAU.C(73): warning C276: constant in condition expression
+MATKHAU.C(90): warning C276: constant in condition expression
+matkhau.c - 0 Error(s), 2 Warning(s).
+compiling matkhau.c...
+matkhau.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=29.0 xdata=0 code=1168
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 0 Warning(s).
+compiling matkhau.c...
+matkhau.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GET_KEY_PAD?MATKHAU
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GET_KEYPAD_KEY
+    MODULE:  matkhau.obj (MATKHAU)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GET_KEYPAD_KEY
+    MODULE:  matkhau.obj (MATKHAU)
+    ADDRESS: 0AFFH
+Program Size: data=29.0 xdata=0 code=1168
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 3 Warning(s).
+compiling matkhau.c...
+matkhau.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GET_KEY_PAD?MATKHAU
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GET_KEYPAD_KEY
+    MODULE:  matkhau.obj (MATKHAU)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GET_KEYPAD_KEY
+    MODULE:  matkhau.obj (MATKHAU)
+    ADDRESS: 0AFFH
+Program Size: data=29.0 xdata=0 code=1168
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 3 Warning(s).
+compiling matkhau.c...
+matkhau.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=29.0 xdata=0 code=1168
+creating hex file from "matkhau"...
+"matkhau" - 0 Error(s), 0 Warning(s).

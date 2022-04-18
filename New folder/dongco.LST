@@ -1,0 +1,65 @@
+C51 COMPILER V9.01   DONGCO                                                                04/01/2022 11:11:22 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE DONGCO
+OBJECT MODULE PLACED IN dongco.OBJ
+COMPILER INVOKED BY: D:\Program Files\Keil\C51\BIN\C51.EXE dongco.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <REGX51.H>
+   2          sbit Lmotor_P =P2^0;
+   3          sbit Lmotor_N =P2^1;
+   4          sbit Rmotor_P =P2^2;
+   5          sbit Rmotor_N =P2^3;
+   6          
+   7          sbit Left_S = P1^0;
+   8          sbit Right_S = P1^1;
+   9          sbit Front_S = P1^2;
+  10          
+  11          void main(void){
+  12   1              
+  13   1              Left_S = 0;
+  14   1              Right_S = 0;
+  15   1              Front_S = 0;
+  16   1              while(1){
+  17   2                      if(Left_S ==1 && Right_S == 0 && Front_S == 0){
+  18   3                              Lmotor_P = 1;
+  19   3                              Lmotor_N = 0;
+  20   3                              Rmotor_P = 0;
+  21   3                              Rmotor_N = 1;
+  22   3                      }
+  23   2                      else if(Left_S ==0 && Right_S == 1 && Front_S == 0){
+  24   3                              Lmotor_P = 0;
+  25   3                              Lmotor_N = 1;
+  26   3                              Rmotor_P = 1;
+  27   3                              Rmotor_N = 0;
+  28   3                      }
+  29   2                      else if(Left_S ==0 && Right_S == 0 && Front_S == 1){
+  30   3                              Lmotor_P = 0;
+  31   3                              Lmotor_N = 0;
+  32   3                              Rmotor_P = 0;
+  33   3                              Rmotor_N = 0;
+  34   3                      }
+  35   2                      else{
+  36   3                              Lmotor_P = 1;
+  37   3                              Lmotor_N = 0;
+  38   3                              Rmotor_P = 1;
+  39   3                              Rmotor_N = 0;
+  40   3                      }
+  41   2              }
+  42   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     73    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

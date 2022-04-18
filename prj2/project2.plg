@@ -1,0 +1,342 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\laptrinhnhung\prj2\project2.uvproj
+Project File Date:  03/04/2022
+
+<h2>Output:</h2>
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=0 code=81
+creating hex file from "project2"...
+"project2" - 0 Error(s), 0 Warning(s).
+compiling denled.c...
+DENLED.C(58): error C141: syntax error near 'void'
+denled.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling denled.c...
+DENLED.C(58): error C141: syntax error near 'void'
+Target not created
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+Program Size: data=9.0 xdata=0 code=184
+creating hex file from "project2"...
+"project2" - 0 Error(s), 1 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+Program Size: data=9.0 xdata=0 code=289
+creating hex file from "project2"...
+"project2" - 0 Error(s), 2 Warning(s).
+compiling denled.c...
+DENLED.C(105): warning C206: 'sleep': missing function-prototype
+DENLED.C(105): error C267: 'sleep': requires ANSI-style prototype
+denled.c - 1 Error(s), 1 Warning(s).
+compiling denled.c...
+denled.c(5): warning C318: can't open file 'unistd.h'
+denled.c(6): warning C318: can't open file 'pthread.h'
+DENLED.C(111): warning C206: 'sleep': missing function-prototype
+DENLED.C(111): error C267: 'sleep': requires ANSI-style prototype
+denled.c - 1 Error(s), 3 Warning(s).
+compiling denled.c...
+DENLED.C(107): warning C206: 'sleep': missing function-prototype
+DENLED.C(107): error C267: 'sleep': requires ANSI-style prototype
+denled.c - 1 Error(s), 1 Warning(s).
+compiling denled.c...
+DENLED.C(108): warning C206: 'printf': missing function-prototype
+DENLED.C(108): error C267: 'printf': requires ANSI-style prototype
+DENLED.C(109): error C202: 'NULL': undefined identifier
+denled.c - 2 Error(s), 1 Warning(s).
+compiling denled.c...
+DENLED.C(108): warning C206: 'printf': missing function-prototype
+DENLED.C(108): error C267: 'printf': requires ANSI-style prototype
+denled.c - 1 Error(s), 1 Warning(s).
+compiling denled.c...
+DENLED.C(108): warning C173: missing return-expression
+DENLED.C(105): warning C280: 'vargp': unreferenced local variable
+DENLED.C(108): warning C290: missing return value
+denled.c - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+DENLED.C(108): error C202: 'NULL': undefined identifier
+denled.c - 1 Error(s), 0 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+compiling denled.c...
+DENLED.C(108): warning C206: 'printf': missing function-prototype
+DENLED.C(108): error C267: 'printf': requires ANSI-style prototype
+denled.c - 1 Error(s), 1 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+compiling denled.c...
+denled.c(2): warning C318: can't open file 'pthread.h'
+denled.c - 0 Error(s), 1 Warning(s).
+compiling denled.c...
+denled.c(2): warning C318: can't open file 'pthread.h'
+DENLED.C(154): error C202: 'pthread_t': undefined identifier
+DENLED.C(154): error C141: syntax error near 'thread1'
+DENLED.C(155): error C202: 'pthread_t': undefined identifier
+DENLED.C(155): error C141: syntax error near 'thread2'
+DENLED.C(156): error C202: 'thread1': undefined identifier
+DENLED.C(157): error C202: 'thread2': undefined identifier
+DENLED.C(158): error C202: 'thread1': undefined identifier
+DENLED.C(159): error C202: 'thread2': undefined identifier
+denled.c - 8 Error(s), 1 Warning(s).
+compiling denled.c...
+DENLED.C(125): error C174: return-expression on void-function
+denled.c - 1 Error(s), 0 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT?DENLED
+Program Size: data=9.0 xdata=0 code=358
+creating hex file from "project2"...
+"project2" - 0 Error(s), 4 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=361
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=361
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=285
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=291
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=291
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=285
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+DENLED.C(170): warning C206: 'left1': missing function-prototype
+denled.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT2?DENLED
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  LEFT1
+    MODULE:  denled.obj (DENLED)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  LEFT1
+    MODULE:  denled.obj (DENLED)
+    ADDRESS: 093FH
+Program Size: data=9.0 xdata=0 code=347
+creating hex file from "project2"...
+"project2" - 0 Error(s), 7 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=347
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=347
+creating hex file from "project2"...
+"project2" - 0 Error(s), 3 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT2?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT2?DENLED
+Program Size: data=9.0 xdata=0 code=341
+creating hex file from "project2"...
+"project2" - 0 Error(s), 5 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT?DENLED
+Program Size: data=9.0 xdata=0 code=341
+creating hex file from "project2"...
+"project2" - 0 Error(s), 5 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+Program Size: data=9.0 xdata=0 code=354
+creating hex file from "project2"...
+"project2" - 0 Error(s), 2 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT2?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT2?DENLED
+Program Size: data=9.0 xdata=0 code=348
+creating hex file from "project2"...
+"project2" - 0 Error(s), 4 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT?DENLED
+Program Size: data=9.0 xdata=0 code=341
+creating hex file from "project2"...
+"project2" - 0 Error(s), 5 Warning(s).
+compiling denled.c...
+denled.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_BLINK?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LEFTRIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RIGHTLEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RIGHT2?DENLED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEFT2?DENLED
+Program Size: data=9.0 xdata=0 code=393
+creating hex file from "project2"...
+"project2" - 0 Error(s), 7 Warning(s).

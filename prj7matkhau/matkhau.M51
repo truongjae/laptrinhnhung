@@ -1,0 +1,299 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/01/2022  09:33:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\PROGRAM FILES\KEIL\C51\BIN\BL51.EXE STARTUP.obj, matkhau.obj TO matkhau
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  matkhau.obj (MATKHAU)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?COPY)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  D:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?STRCMP)
+
+
+LINK MAP OF MODULE:  matkhau (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0014H     UNIT         _DATA_GROUP_
+            IDATA   001CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     02BEH     UNIT         ?C?LIB_CODE
+            CODE    0ABEH     00C1H     UNIT         ?PR?MAIN?MATKHAU
+            CODE    0B7FH     0063H     UNIT         ?PR?GET_KEY_PAD?MATKHAU
+            CODE    0BE2H     0036H     UNIT         ?CO?MATKHAU
+            CODE    0C18H     002FH     UNIT         ?PR?_LCD_STR?MATKHAU
+            CODE    0C47H     0026H     UNIT         ?PR?_DELY?MATKHAU
+            CODE    0C6DH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0C79H     000AH     UNIT         ?PR?_LCD_DATA?MATKHAU
+            CODE    0C83H     000AH     UNIT         ?PR?_LCD_CMD?MATKHAU
+
+
+
+OVERLAY MAP OF MODULE:   matkhau (?C_STARTUP)
+
+
+SEGMENT                           DATA_GROUP 
+  +--> CALLED SEGMENT           START    LENGTH
+-----------------------------------------------
+?C_C51STARTUP                   -----    -----
+  +--> ?PR?MAIN?MATKHAU
+
+?PR?MAIN?MATKHAU                0008H    000FH
+  +--> ?CO?MATKHAU
+  +--> ?PR?_LCD_CMD?MATKHAU
+  +--> ?PR?_LCD_STR?MATKHAU
+  +--> ?PR?GET_KEY_PAD?MATKHAU
+  +--> ?PR?_LCD_DATA?MATKHAU
+  +--> ?PR?_DELY?MATKHAU
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/01/2022  09:33:30  PAGE 2
+
+
+?PR?_LCD_CMD?MATKHAU            -----    -----
+  +--> ?PR?_DELY?MATKHAU
+
+?PR?_LCD_STR?MATKHAU            0017H    0005H
+  +--> ?PR?_LCD_DATA?MATKHAU
+
+?PR?_LCD_DATA?MATKHAU           -----    -----
+  +--> ?PR?_DELY?MATKHAU
+
+
+
+SYMBOL TABLE OF MODULE:  matkhau (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0C6DH         SEGMENT       ?C_C51STARTUP
+  I:001CH         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0C70H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0C6DH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0C6DH         LINE#         133
+  C:0C6FH         LINE#         134
+  C:0C70H         LINE#         135
+  C:0C71H         LINE#         136
+  C:0C73H         LINE#         185
+  C:0C76H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MATKHAU
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0B7FH         PUBLIC        get_key_pad
+  C:0ABEH         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/01/2022  09:33:30  PAGE 3
+
+
+  C:0C4DH         PUBLIC        _dely
+  C:0C79H         PUBLIC        _lcd_data
+  C:0C13H         SYMBOL        _?ix1000
+  C:0C83H         PUBLIC        _lcd_cmd
+  B:00B0H.1       PUBLIC        en
+  B:00B0H.0       PUBLIC        rs
+  C:0C18H         PUBLIC        _lcd_str
+  B:00B0H.2       PUBLIC        device
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        KeyVal
+  D:0009H         SYMBOL        KeyCnt
+  D:000BH         SYMBOL        CmpPassword
+  D:000DH         SYMBOL        DefaultPAssword
+  D:0012H         SYMBOL        EnteredPassword
+  -------         ENDDO         
+  C:0ABEH         LINE#         18
+  C:0ABEH         LINE#         19
+  C:0AC1H         LINE#         20
+  C:0AC5H         LINE#         21
+  C:0AC9H         LINE#         22
+  C:0ADAH         LINE#         24
+  C:0ADCH         LINE#         25
+  C:0AE1H         LINE#         26
+  C:0AE6H         LINE#         27
+  C:0AEBH         LINE#         28
+  C:0AF0H         LINE#         30
+  C:0AF0H         LINE#         31
+  C:0AF5H         LINE#         32
+  C:0AFEH         LINE#         34
+  C:0B03H         LINE#         35
+  C:0B07H         LINE#         36
+  C:0B0FH         LINE#         37
+  C:0B16H         LINE#         38
+  C:0B1BH         LINE#         39
+  C:0B23H         LINE#         40
+  C:0B23H         LINE#         41
+  C:0B2BH         LINE#         42
+  C:0B30H         LINE#         43
+  C:0B35H         LINE#         44
+  C:0B4AH         LINE#         45
+  C:0B4EH         LINE#         46
+  C:0B50H         LINE#         47
+  C:0B55H         LINE#         48
+  C:0B5EH         LINE#         49
+  C:0B65H         LINE#         50
+  C:0B67H         LINE#         51
+  C:0B6CH         LINE#         52
+  C:0B75H         LINE#         53
+  C:0B7CH         LINE#         54
+  C:0B7CH         LINE#         55
+  C:0B7CH         LINE#         56
+  -------         ENDPROC       MAIN
+  -------         PROC          GET_KEY_PAD
+  -------         DO            
+  D:0007H         SYMBOL        key_val
+  -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/01/2022  09:33:30  PAGE 4
+
+
+  C:0B7FH         LINE#         59
+  C:0B7FH         LINE#         60
+  C:0B81H         LINE#         61
+  C:0B84H         LINE#         62
+  C:0B89H         LINE#         63
+  C:0B8BH         LINE#         64
+  C:0B8BH         LINE#         65
+  C:0B90H         LINE#         66
+  C:0B92H         LINE#         67
+  C:0B92H         LINE#         68
+  C:0B97H         LINE#         69
+  C:0B99H         LINE#         70
+  C:0B99H         LINE#         72
+  C:0B9CH         LINE#         73
+  C:0BA1H         LINE#         74
+  C:0BA3H         LINE#         75
+  C:0BA3H         LINE#         76
+  C:0BA8H         LINE#         77
+  C:0BAAH         LINE#         78
+  C:0BAAH         LINE#         79
+  C:0BAFH         LINE#         80
+  C:0BB1H         LINE#         81
+  C:0BB1H         LINE#         83
+  C:0BB4H         LINE#         84
+  C:0BB9H         LINE#         85
+  C:0BBBH         LINE#         86
+  C:0BBBH         LINE#         87
+  C:0BC0H         LINE#         88
+  C:0BC2H         LINE#         89
+  C:0BC2H         LINE#         90
+  C:0BC7H         LINE#         91
+  C:0BC9H         LINE#         92
+  C:0BC9H         LINE#         94
+  C:0BCCH         LINE#         95
+  C:0BD1H         LINE#         96
+  C:0BD3H         LINE#         97
+  C:0BD3H         LINE#         98
+  C:0BD8H         LINE#         99
+  C:0BDAH         LINE#         100
+  C:0BDAH         LINE#         101
+  C:0BDFH         LINE#         102
+  C:0BE1H         LINE#         103
+  C:0BE1H         LINE#         104
+  C:0BE1H         LINE#         105
+  -------         ENDPROC       GET_KEY_PAD
+  -------         PROC          _LCD_STR
+  D:0017H         SYMBOL        str
+  -------         DO            
+  D:001AH         SYMBOL        loop
+  -------         ENDDO         
+  C:0C18H         LINE#         107
+  C:0C1EH         LINE#         108
+  C:0C23H         LINE#         109
+  C:0C39H         LINE#         110
+  C:0C3CH         LINE#         111
+  C:0C46H         LINE#         112
+  -------         ENDPROC       _LCD_STR
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/01/2022  09:33:30  PAGE 5
+
+
+  -------         PROC          _LCD_DATA
+  D:0007H         SYMBOL        ch
+  C:0C79H         LINE#         113
+  C:0C79H         LINE#         114
+  C:0C7BH         LINE#         115
+  C:0C7DH         LINE#         116
+  C:0C7DH         LINE#         117
+  C:0C80H         LINE#         118
+  C:0C82H         LINE#         119
+  -------         ENDPROC       _LCD_DATA
+  -------         PROC          _LCD_CMD
+  D:0007H         SYMBOL        ch
+  C:0C83H         LINE#         121
+  C:0C83H         LINE#         122
+  C:0C85H         LINE#         123
+  C:0C87H         LINE#         124
+  C:0C87H         LINE#         125
+  C:0C8AH         LINE#         126
+  C:0C8CH         LINE#         127
+  -------         ENDPROC       _LCD_CMD
+  -------         PROC          L?0038
+  -------         ENDPROC       L?0038
+  -------         PROC          _DELY
+  D:0006H         SYMBOL        dly
+  -------         DO            
+  D:0004H         SYMBOL        loop
+  D:0002H         SYMBOL        delay_gen
+  -------         ENDDO         
+  C:0C4DH         LINE#         129
+  C:0C4DH         LINE#         130
+  C:0C50H         LINE#         131
+  C:0C50H         LINE#         132
+  C:0C57H         LINE#         133
+  C:0C6CH         LINE#         134
+  -------         ENDPROC       _DELY
+  -------         ENDMOD        MATKHAU
+
+  -------         MODULE        ?C?COPY
+  C:08D0H         PUBLIC        ?C?COPY
+  -------         ENDMOD        ?C?COPY
+
+  -------         MODULE        ?C?CLDOPTR
+  C:08F6H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?STRCMP
+  C:0AA1H         PUBLIC        ?C?STRCMP
+  -------         ENDMOD        ?C?STRCMP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 01D2H BYTE (22%) *
+******************************************************************************
+
+Program Size: data=29.0 xdata=0 code=1168
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
