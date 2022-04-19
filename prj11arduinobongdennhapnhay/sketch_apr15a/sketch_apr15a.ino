@@ -40,7 +40,7 @@ void LeftRightToMid(){
   }
 }
 void loop() {
-//  leftToRight();
-//  RightToLeft();
-//  LeftRightToMid();
+  leftToRight();
+  RightToLeft();
+  LeftRightToMid();
 }
